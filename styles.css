@@ -22,7 +22,7 @@
 }
 
 .image-box:hover img {
-transform: scale(0.7);
+object-fit: contain;
 }
 
 .image_container{
