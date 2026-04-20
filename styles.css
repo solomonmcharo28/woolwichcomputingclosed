@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.image-box :hover{
+.image-box:hover{
     overflow:visible;
 }
 
