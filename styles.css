@@ -28,3 +28,42 @@ transform: scale(1.3);
 .image_container{
     border: 1px solid black;
 }
+
+/* .bergkamp-text1{
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.bergkamp-text2{
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.bergkamp26.active img {
+  display: none;
+}
+
+.bergkamp26.active .bergkamp-text2 {
+  display: block;
+}
+
+.bergkamp19.active img {
+  display: none;
+}
+
+.bergkamp19.active .bergkamp-text1 {
+  display: block;
+} */
+
+.image-box.active img {
+  display: none;
+}
+
+.image-box.active .player-text {
+  display: block;
+}
+.player-text {
+  display: none;
+}
