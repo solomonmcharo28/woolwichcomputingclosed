@@ -38,7 +38,7 @@ let index3 = 0;
 
 function autoSlide3() {
   index3++;
-  if (index3 >= totalSlides2) {
+  if (index3 >= totalSlides3) {
     index3 = 0;
   }
   slides3.style.transform = `translateX(-${index3 * 100}%)`;
