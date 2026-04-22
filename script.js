@@ -44,3 +44,16 @@ function autoSlide3() {
   slides3.style.transform = `translateX(-${index3 * 100}%)`;
 }
 setInterval(autoSlide3, 3000);
+
+window.addEventListener("load", () => {
+  const banner = document.getElementById("banner");
+
+  // show banner
+  banner.classList.add("show");
+
+  // hide after 3 seconds
+  setTimeout(() => {
+    banner.classList.remove("show");
+    banner.classList.add("hide");
+  }, 3000);
+});
