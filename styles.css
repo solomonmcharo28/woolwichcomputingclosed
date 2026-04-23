@@ -125,3 +125,8 @@ transform: scale(1.3);
   /* transform: translateY(-100%); */
   opacity: 0;
 }
+
+.bodyText {
+    padding-left: 5%;
+    padding-right: 5%;
+}
