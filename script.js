@@ -57,3 +57,16 @@ window.addEventListener("load", () => {
     banner.classList.add("hide");
   }, 3000);
 });
+
+const slides4 = document.getElementById("slides4");
+const totalSlides4 = slides3.children.length;
+let index4 = 0;
+
+function autoSlide4() {
+  index4++;
+  if (index4 >= totalSlides4) {
+    index4 = 0;
+  }
+  slides4.style.transform = `translateX(-${index4 * 100}%)`;
+}
+setInterval(autoSlide4, 3000);
