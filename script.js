@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
 });
 
 const slides4 = document.getElementById("slides4");
-const totalSlides4 = slides3.children.length;
+const totalSlides4 = slides4.children.length;
 let index4 = 0;
 
 function autoSlide4() {
