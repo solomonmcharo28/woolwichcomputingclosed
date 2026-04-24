@@ -132,7 +132,7 @@ transform: scale(1.3);
 }
 
 .gradient-text {
-  background: linear-gradient(to right, red, green);
+  background: linear-gradient(to bottom, red, rgb(69, 236, 69));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
