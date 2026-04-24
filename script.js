@@ -70,3 +70,17 @@ function autoSlide4() {
   slides4.style.transform = `translateX(-${index4 * 100}%)`;
 }
 setInterval(autoSlide4, 3000);
+
+
+const slides5 = document.getElementById("slides5");
+const totalSlides5 = slides5.children.length;
+let index5 = 0;
+
+function autoSlide5() {
+  index5++;
+  if (index5 >= totalSlides5) {
+    index5 = 0;
+  }
+  slides5.style.transform = `translateX(-${index5 * 100}%)`;
+}
+setInterval(autoSlide5, 3000);
