@@ -10,6 +10,25 @@
 
 </head>
 <body>
+<code>
+def compute_develle_mcharo_passing(row: pd.Series) -> float:
+    v = row["mentality_vision"] / 100.0
+    cr = row["attacking_crossing"] / 100.0
+    fk = row["skill_fk_accuracy"] / 100.0
+    sp = row["attacking_short_passing"] / 100.0
+    lp = row["skill_long_passing"] / 100.0
+    cv = row["skill_curve"] / 100.0
+
+    s_star = 0.75 * sp + 0.25 * cr
+    l_star = 0.625 * lp + 0.1875 * fk + 0.1875 * cr
+    capacity = v + 0.809 * cv + s_star + l_star
+    penalty = (1 - (s_star - l_star) ** 2) * (1 - v) ** 2
+
+    ep = capacity - penalty
+    return round(ep, 9)
+
+
+</code>
 Thought for a couple of seconds
 
 Yes — your formula has a strong Taylor-expansion flavor, especially because the curve term behaves like a weighted nonlinear correction to passing capacity.
