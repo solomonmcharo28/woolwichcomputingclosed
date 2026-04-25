@@ -11,21 +11,33 @@
 </head>
 <body>
 <code>
+    <br>
 def compute_develle_mcharo_passing(row: pd.Series) -> float:
+<br>
     v = row["mentality_vision"] / 100.0
+    <br>
     cr = row["attacking_crossing"] / 100.0
+    <br>
     fk = row["skill_fk_accuracy"] / 100.0
+    <br>
     sp = row["attacking_short_passing"] / 100.0
+    <br>
     lp = row["skill_long_passing"] / 100.0
+    <br>
     cv = row["skill_curve"] / 100.0
-
+    <br>
     s_star = 0.75 * sp + 0.25 * cr
+    <br>
     l_star = 0.625 * lp + 0.1875 * fk + 0.1875 * cr
+    <br>
     capacity = v + 0.809 * cv + s_star + l_star
+    <br>
     penalty = (1 - (s_star - l_star) ** 2) * (1 - v) ** 2
-
+    <br>
     ep = capacity - penalty
+    <br>
     return round(ep, 9)
+    <br>
 
 
 </code>
