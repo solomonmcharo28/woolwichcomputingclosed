@@ -94,6 +94,10 @@ transform: scale(1.3);
   transition: transform 0.8s ease-in-out;
 }
 
+.slide {
+    object-fit: contain;
+}
+
 .slides img {
   width: 100%;        /* 🔥 each image = full slider width */
   height: 100%;
