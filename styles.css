@@ -76,7 +76,7 @@ transform: scale(1.3);
   overflow-y: auto;
 }
 .player-text {
-    height: 100%;
+  height: 100%;
   padding: 10px;
   display: none;
 }
