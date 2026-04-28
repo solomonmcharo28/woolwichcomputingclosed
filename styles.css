@@ -3,8 +3,8 @@
   height: 1500px;
   object-fit: cover;
 }
-.body{
-background-color: rgb(100, 140, 155);
+body{
+background-color: var(--page-bg); 
 }
 
 .player-text {
