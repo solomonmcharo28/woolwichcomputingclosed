@@ -177,9 +177,9 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01 }){
   const hoverText255 = rgb255(hoverText.color01.map(v => v*255));
   const pageBg255 = rgb255(pageBg01.map(v => v*255));
 
-  document.documentElement.style.setProperty("body-bg", rgbToCss(base255));
+  document.documentElement.style.setProperty("--page-bg", rgbToCss(base255));
   document.documentElement.style.setProperty("", rgbToCss(baseText255));
-  document.documentElement.style.setProperty("playerText", rgbToCss(hover255));
+  document.documentElement.style.setProperty("--player-text", rgbToCss(hover255));
   document.documentElement.style.setProperty("--btn-hover-fg", rgbToCss(hoverText255));
   document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 
@@ -192,6 +192,11 @@ Hover text via SGD (T_hover):    ${rgbToCss(hoverText255)}  loss=${hoverText.los
 
 Chain: B → H(B) → optimal hover text`;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  applyFromInputs();
+});
+
 
 function applyFromInput(){
   const rgb = parseRGB("100, 140, 165");

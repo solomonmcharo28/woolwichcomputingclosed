@@ -3,6 +3,13 @@
   height: 1500px;
   object-fit: cover;
 }
+.body{
+background-color: var(--page-bg); 
+}
+
+.player-text {
+  color: var(--player-text);          /* player text color */
+}
 
 .image-box {
   width: 100%;
