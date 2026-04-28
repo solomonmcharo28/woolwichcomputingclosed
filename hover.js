@@ -178,8 +178,8 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01 }){
   const pageBg255 = rgb255(pageBg01.map(v => v*255));
 
   document.documentElement.style.setProperty("--page-bg", rgbToCss(base255));
-  document.documentElement.style.setProperty("", rgbToCss(baseText255));
-  document.documentElement.style.setProperty("--player-text", rgbToCss(hover255));
+  document.documentElement.style.setProperty("--player-text", rgbToCss(baseText255));
+  // document.documentElement.style.setProperty("--player-text", rgbToCss(hover255));
   document.documentElement.style.setProperty("--btn-hover-fg", rgbToCss(hoverText255));
   // document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 

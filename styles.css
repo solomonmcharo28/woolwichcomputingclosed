@@ -4,7 +4,7 @@
   object-fit: cover;
 }
 .body{
-background-color: var(--page-bg); 
+background-color: rgb(100, 140, 155);
 }
 
 .player-text {
