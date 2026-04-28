@@ -141,6 +141,9 @@ transform: scale(1.3);
     color: var(--player-text); 
 }
 
+.bodyText:hover{
+  color: var(--player-text-hover);
+}
 .gradient-text {
   background: linear-gradient(to bottom, red, yellow, rgb(69, 236, 69));
   -webkit-background-clip: text;
