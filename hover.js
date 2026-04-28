@@ -198,7 +198,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function applyFromInput(){
+function applyFromInput(index){
+  let myColors = ["0, 0, 0", "10, 50, 80", "100, 140, 165"]
   const rgb = parseRGB("100, 140, 165");
   if (!rgb){
     readout.textContent = "Invalid RGB. Use format: r, g, b  (e.g. 34, 139, 230)";

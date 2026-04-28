@@ -104,6 +104,7 @@ function autoSlide4() {
     index4 = 0;
   }
   slides4.style.transform = `translateX(-${index4 * 100}%)`;
+  
 }
 
 let slideInterval4 = setInterval(autoSlide4, 3000);
@@ -118,6 +119,7 @@ slides4.addEventListener("click", () => {
     slideInterval4 = setInterval(autoSlide4, 3000);
     isPaused4 = false;
   }
+  applyFromInput(index4);
 });
 
 
