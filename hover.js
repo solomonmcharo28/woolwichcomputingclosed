@@ -183,14 +183,14 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01 }){
   document.documentElement.style.setProperty("--btn-hover-fg", rgbToCss(hoverText255));
   // document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 
-  readout.textContent =
-`Base button background (B):     ${rgbToCss(base255)}
-Base text via SGD (T_base):      ${rgbToCss(baseText255)}   loss=${baseText.loss.toFixed(4)}
+//   readout.textContent =
+// `Base button background (B):     ${rgbToCss(base255)}
+// Base text via SGD (T_base):      ${rgbToCss(baseText255)}   loss=${baseText.loss.toFixed(4)}
 
-Hover background H(B):           ${rgbToCss(hover255)}
-Hover text via SGD (T_hover):    ${rgbToCss(hoverText255)}  loss=${hoverText.loss.toFixed(4)}
+// Hover background H(B):           ${rgbToCss(hover255)}
+// Hover text via SGD (T_hover):    ${rgbToCss(hoverText255)}  loss=${hoverText.loss.toFixed(4)}
 
-Chain: B → H(B) → optimal hover text`;
+// Chain: B → H(B) → optimal hover text`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
