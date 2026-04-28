@@ -194,7 +194,7 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01 }){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  applyFromInput("255, 255, 255");
+  applyFromInput(0);
 });
 
 
