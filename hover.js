@@ -194,7 +194,7 @@ Chain: B → H(B) → optimal hover text`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  applyFromInputs();
+  applyFromInput();
 });
 
 
@@ -208,13 +208,13 @@ function applyFromInput(){
   setCssVars(result);
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  applyFromInput();
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   applyFromInput();
+// });
 
-// initial paint
-applyFromInput();
+// // initial paint
+// applyFromInput();
 
 function rgbToHsv([r,g,b]) {
   const max = Math.max(r,g,b), min = Math.min(r,g,b);
