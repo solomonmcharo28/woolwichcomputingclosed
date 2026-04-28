@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function applyFromInput(index){
-  let myColors = ["255, 255, 255", "10, 50, 80", "100, 140, 165", "210, 50, 15", "18, 19, 20", "61, 70, 81"]
+  let myColors = ["255, 255, 255", "10, 50, 80", "100, 140, 165", "128, 0, 32", "18, 19, 20", "61, 70, 81"]
   const rgb = parseRGB(myColors[index]);
   if (!rgb){
     readout.textContent = "Invalid RGB. Use format: r, g, b  (e.g. 34, 139, 230)";
