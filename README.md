@@ -1,2 +1,2 @@
 # woolwichcomputingclosed
-Pre-realease work from Woolwich Computing
+Pre-release work from Woolwich Computing
