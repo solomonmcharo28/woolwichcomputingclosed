@@ -177,9 +177,9 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01 }){
   const hoverText255 = rgb255(hoverText.color01.map(v => v*255));
   const pageBg255 = rgb255(pageBg01.map(v => v*255));
 
-  document.documentElement.style.setProperty("--btn-bg", rgbToCss(base255));
-  document.documentElement.style.setProperty("--btn-fg", rgbToCss(baseText255));
-  document.documentElement.style.setProperty("--btn-hover-bg", rgbToCss(hover255));
+  document.documentElement.style.setProperty("body-bg", rgbToCss(base255));
+  document.documentElement.style.setProperty("", rgbToCss(baseText255));
+  document.documentElement.style.setProperty("playerText", rgbToCss(hover255));
   document.documentElement.style.setProperty("--btn-hover-fg", rgbToCss(hoverText255));
   document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 
@@ -194,7 +194,7 @@ Chain: B → H(B) → optimal hover text`;
 }
 
 function applyFromInput(){
-  const rgb = parseRGB(rgbInput.value);
+  const rgb = parseRGB("100, 140, 165");
   if (!rgb){
     readout.textContent = "Invalid RGB. Use format: r, g, b  (e.g. 34, 139, 230)";
     return;
