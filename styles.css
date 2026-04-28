@@ -139,7 +139,7 @@ transform: scale(1.3);
     padding-left: 5%;
     padding-right: 5%;
     color: var(--player-text); 
-    font-family: 'SpecialElite', system-ui;
+    font-family: 'Special Elite', system-ui;
 }
 
 .bodyText:hover{
