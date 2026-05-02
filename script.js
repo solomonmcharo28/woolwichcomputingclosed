@@ -81,7 +81,7 @@ slides3.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("banner");
 
   // show banner
