@@ -10,7 +10,7 @@ background-color: var(--page-bg);
 .player-text {
   color: var(--player-text);          /* player text color */
   text-align: center;
-  padding: 17%
+  padding: 17%;
 }
 
 .image-box {
