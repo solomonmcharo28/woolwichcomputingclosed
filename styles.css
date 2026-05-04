@@ -16,6 +16,8 @@ background-color: var(--page-bg);
   height: 500px;        
   overflow: hidden;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* .image-box:hover{
