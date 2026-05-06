@@ -20,7 +20,7 @@ background-color: var(--page-bg);
   align-items: center;
   display: flex;
   justify-content: center;
-  box-shadow: 4px 10px 31px rgba(211,211,211,0.45);
+  box-shadow: 4px 10px 69px rgba(211,211,211,0.45);
 }
 
 /* .image-box:hover{
