@@ -20,7 +20,7 @@ background-color: var(--page-bg);
   align-items: center;
   display: flex;
   justify-content: center;
-  box-shadow: 10px 34px 79px 19px rgba(100, 100, 100,0.45);
+  box-shadow: 10px 34px 79px 79px rgba(100, 100, 100,0.45);
 }
 
 /* .image-box:hover{
