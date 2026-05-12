@@ -255,7 +255,6 @@ function applyChain(baseRgb255){
 const form = document.getElementById("colorForm");
 const rgbInput = document.getElementById("rgbInput");
 const cta = document.getElementById("cta");
-const readout = document.getElementById("readout");
 
 function setCssVars({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }){
 
@@ -273,28 +272,7 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }
   document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 const th = hoverOpt.theta.map(x => Number(x).toFixed(4)).join(", ");
 
-readout.textContent =
-`Base background (B₀):           ${rgbToCss(base255)}
 
-Base text via SGD (T₀):
-  color = ${rgbToCss(baseText255)}
-  loss  = ${baseText.loss.toFixed(4)}
-
-Hover parameters via SGD (θ):
-  θ     = [${th}]
-  loss  = ${hoverOpt.loss.toFixed(4)}
-
-Hover background (B₁, derived):
-  color = ${rgbToCss(hover255)}
-
-Hover text via SGD (T₁):
-  color = ${rgbToCss(hoverText255)}
-  loss  = ${hoverText.loss.toFixed(4)}
-
-Chain:
-B₀ → SGD(B₀) → T₀
-     ↓
-   derive B₁ → SGD(T₀, B₁) → T₁`;
 
 
 }
@@ -305,10 +283,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function applyFromInput2(index){
     let myColors = ["255, 255, 255", "10, 50, 80", "100, 140, 165", "128, 0, 32", "18, 19, 20", "61, 70, 81", "255, 253, 208", "64, 224, 208", "254, 209, 0"]
   const rgb = parseRGB(myColors[index]);
-  if (!rgb){
-    readout.textContent = "Invalid RGB. Use format: r, g, b  (e.g. 34, 139, 230)";
-    return;
-  }
   const result = applyChain(rgb);
   setCssVars(result);
 }
