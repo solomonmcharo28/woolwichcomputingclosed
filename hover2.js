@@ -283,10 +283,6 @@ function applyFromInput2(index){
   setCssVars(result);
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  applyFromInput2();
-});
 
 // initial paint
 applyFromInput2();
