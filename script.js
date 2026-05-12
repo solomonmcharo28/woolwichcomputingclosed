@@ -120,6 +120,7 @@ slides4.addEventListener("click", () => {
     isPaused4 = false;
   }
   applyFromInput(index4);
+   applyFromInput2(index4);
 });
 
 

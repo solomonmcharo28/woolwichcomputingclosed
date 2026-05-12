@@ -4,6 +4,16 @@
   object-fit: cover;
 }
 
+.item-hover{
+background-color: var(--btn-bg);
+color: var(--btn-fg);
+}
+
+.item-hover:hover{
+background-color: var(--btn-hover-bg);
+color: var(--btn-hover-fg);
+}
+
 body{
 background-color: var(--page-bg); 
 }
