@@ -40,7 +40,7 @@ function contrastRatio(L1, L2){
  * We'll do: H = mix(B, target, t) where target is a slightly darker + slightly shifted color.
  * (This makes H depend on B smoothly, so “chain rule” applies.)
  */
-function hoverFromBase(base01, theta){
+function hoverFromBase2(base01, theta){
   // theta = [t, fr, fg, fb]
   const t  = clamp01(theta[0]);
   const fr = clamp01(theta[1]);
@@ -223,7 +223,7 @@ function optimizeHoverTheta(base01, {
 
 
 // ---------- Chain-rule pipeline ----------
-function applyChain(baseRgb255){
+function applyChain2(baseRgb255){
   const base01 = rgb01(baseRgb255);
 
   // 1) base button bg = B (from form)
@@ -253,7 +253,7 @@ function applyChain(baseRgb255){
 
 
 
-function setCssVars({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }){
+function setCssVars2({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }){
 
   const base255 = rgb255(base01.map(v => v*255));
   const baseText255 = rgb255(baseText.color01.map(v => v*255));
