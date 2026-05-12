@@ -279,8 +279,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function applyFromInput2(index){
     let myColors = ["255, 255, 255", "10, 50, 80", "100, 140, 165", "128, 0, 32", "18, 19, 20", "61, 70, 81", "255, 253, 208", "64, 224, 208", "254, 209, 0"]
   const rgb = parseRGB(myColors[index]);
-  const result = applyChain(rgb);
-  setCssVars(result);
+  const result = applyChain2(rgb);
+  setCssVars2(result);
 }
 
 
