@@ -4,11 +4,13 @@
   object-fit: cover;
 }
 .item-bar{
-background-color: var(--btn-bg);  
+background-color: var(--btn-bg);
+z-index: -11;  
 }
 
 .item-button{
 background-color: var(--btn-bg);
+z-index: 2;
 }
 
 .item-button:hover{
