@@ -266,7 +266,6 @@ function setCssVars({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }
   document.documentElement.style.setProperty("--btn-fg", rgbToCss(baseText255));
   document.documentElement.style.setProperty("--btn-hover-bg", rgbToCss(hover255));
   document.documentElement.style.setProperty("--btn-hover-fg", rgbToCss(hoverText255));
-  document.documentElement.style.setProperty("--page-bg", rgbToCss(pageBg255));
 const th = hoverOpt.theta.map(x => Number(x).toFixed(4)).join(", ");
 
 
