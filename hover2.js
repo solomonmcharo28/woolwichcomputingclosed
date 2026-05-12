@@ -40,7 +40,7 @@ function contrastRatio(L1, L2){
  * We'll do: H = mix(B, target, t) where target is a slightly darker + slightly shifted color.
  * (This makes H depend on B smoothly, so “chain rule” applies.)
  */
-function hoverFromBase(base01, theta){
+function hoverFromBase2(base01, theta){
   // theta = [t, fr, fg, fb]
   const t  = clamp01(theta[0]);
   const fr = clamp01(theta[1]);
@@ -146,9 +146,9 @@ function optimizeText(bg01, {
   }
   return { params: p, color01: textColorFromParams(p), loss: lossForText(bg01, textColorFromParams(p)) };
 }
-// ---------- Hover-parameter SGD (decide hover via SGD, then call hoverFromBase) ----------
+// ---------- Hover-parameter SGD (decide hover via SGD, then call hoverFromBase2) ----------
 function lossForHoverTheta(base01, theta){
-  const hover01 = hoverFromBase(base01, theta);
+  const hover01 = hoverFromBase2(base01, theta);
   
 
   // A) Make hover noticeably different from base (push toward target diff)
@@ -235,7 +235,7 @@ function applyChain2(baseRgb255){
   const hoverOpt = optimizeHoverTheta(base01);
 
   // 4) hover bg computed by calling the previous hover algorithm with theta
-  const hover01 = hoverFromBase(base01, hoverOpt.theta);
+  const hover01 = hoverFromBase2(base01, hoverOpt.theta);
 
   // 5) hover text chosen by SGD based on hover bg
   const hoverText = optimizeText(hover01, { initParams: baseText.params });
