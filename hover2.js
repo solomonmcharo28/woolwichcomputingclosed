@@ -40,7 +40,7 @@ function contrastRatio(L1, L2){
  * We'll do: H = mix(B, target, t) where target is a slightly darker + slightly shifted color.
  * (This makes H depend on B smoothly, so “chain rule” applies.)
  */
-function hoverFromBase2(base01, theta){
+function hoverFromBase(base01, theta){
   // theta = [t, fr, fg, fb]
   const t  = clamp01(theta[0]);
   const fr = clamp01(theta[1]);
