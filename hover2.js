@@ -251,10 +251,7 @@ function applyChain(baseRgb255){
 }
 
 
-// ---------- DOM wiring ----------
-const form = document.getElementById("colorForm");
-const rgbInput = document.getElementById("rgbInput");
-const cta = document.getElementById("cta");
+
 
 function setCssVars({ base01, baseText, hover01, hoverText, pageBg01, hoverOpt }){
 
