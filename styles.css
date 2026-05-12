@@ -4,13 +4,19 @@
   object-fit: cover;
 }
 
-.item-hover{
+.item-button{
 background-color: var(--btn-bg);
+}
+
+.item-button:hover{
+background-color: var(--btn-hover-bg);
+}
+
+.item-text{
 color: var(--btn-fg);
 }
 
-.item-hover:hover{
-background-color: var(--btn-hover-bg);
+.item-text:hover{
 color: var(--btn-hover-fg);
 }
 
