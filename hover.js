@@ -201,10 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function applyFromInput(index){
   let myColors = ["255, 255, 255", "10, 50, 80", "100, 140, 165", "128, 0, 32", "18, 19, 20", "61, 70, 81", "255, 253, 208", "64, 224, 208", "254, 209, 0"]
   const rgb = parseRGB(myColors[index]);
-  if (!rgb){
-    readout.textContent = "Invalid RGB. Use format: r, g, b  (e.g. 34, 139, 230)";
-    return;
-  }
   const result = applyChain(rgb);
   setCssVars(result);
 }
