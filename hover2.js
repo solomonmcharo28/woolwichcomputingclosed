@@ -285,7 +285,7 @@ function applyFromInput2(index){
 
 
 // initial paint
-applyFromInput2();
+applyFromInput2(0);
 
 function rgbToHsv([r,g,b]) {
   const max = Math.max(r,g,b), min = Math.min(r,g,b);
