@@ -110,7 +110,7 @@ function autoSlide4() {
 let slideInterval4 = setInterval(autoSlide4, 3000);
 
 let isPaused4 = false;
-
+document.documentElement.style.setProperty("--btn-peakoil", "rgb(13, 232, 13)");
 slides4.addEventListener("click", () => {
   if (!isPaused4) {
     clearInterval(slideInterval4);
