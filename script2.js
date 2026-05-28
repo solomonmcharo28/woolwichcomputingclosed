@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty("--btn-peakoil", "rgb(13, 232, 13)");
