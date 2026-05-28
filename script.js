@@ -122,10 +122,10 @@ slides4.addEventListener("click", () => {
   applyFromInput(index4);
    applyFromInput2(index4);
    if (index4 == 7){
-    document.documentElement.style.setProperty("--btn-peakoil", "2, 80, 2");
+    document.documentElement.style.setProperty("--btn-peakoil", "rgb(2, 80, 2)");
    }
    else{
-    document.documentElement.style.setProperty("--btn-peakoil", "13, 232, 13");
+    document.documentElement.style.setProperty("--btn-peakoil", "rgb(13, 232, 13)");
    }
 });
 
