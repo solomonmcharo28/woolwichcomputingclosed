@@ -25,6 +25,14 @@ color: var(--btn-fg);
 color: var(--btn-hover-fg);
 }
 
+.seasonMessage{
+  display: none;
+}
+
+.seasonMessage.active{
+  display: block;
+}
+
 body{
 background-color: var(--page-bg); 
 }

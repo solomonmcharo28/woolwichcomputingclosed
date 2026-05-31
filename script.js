@@ -3,8 +3,14 @@ function toggleText(box) {
 }
 
 const slides = document.getElementById("slides");
+const seeMore = document.getElementById("seeMore");
+const seasonMessage = document.getElementById("seasonMessage");
 const totalSlides = slides.children.length;
 let index = 0;
+let seeMessage = false;
+seeMore.addEventListener("click", () => {
+ seasonMessage.classList.toggle("active");
+});
 
 function autoSlide() {
   index++;
