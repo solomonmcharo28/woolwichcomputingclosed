@@ -33,6 +33,10 @@ color: var(--btn-hover-fg);
   display:block;
 }
 
+#seeMore{
+  color:blue;
+}
+
 body{
 background-color: var(--page-bg); 
 }
