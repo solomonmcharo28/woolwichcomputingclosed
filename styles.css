@@ -25,14 +25,12 @@ color: var(--btn-fg);
 color: var(--btn-hover-fg);
 }
 
-.seasonMessage{
+#seasonMessage{
   display:none;
-  visibility: collapse;
 }
 
-.seasonMessage.active{
+#seasonMessage.active{
   display:block;
-  visibility:visible;
 }
 
 body{
